@@ -56,26 +56,8 @@ The dataset includes the following key tables:
 - **Outlet Information**: Details about outlet size, location, type, and establishment age.
 - **Product Information**: Includes product types and fat content.
 
+
+
+
 ## SQL Queries
-Here are some examples of SQL queries used in the analysis:
-```sql
--- Query to analyze sales by outlet type
-SELECT outlet_type, SUM(total_sales) AS total_sales
-FROM sales_data
-GROUP BY outlet_type;
-
--- Query to evaluate the impact of fat content on sales
-SELECT fat_content, SUM(total_sales) AS total_sales, AVG(average_sales) AS avg_sales
-FROM sales_data
-GROUP BY fat_content;
-
--- Query to compare sales across different locations
-SELECT outlet_location, SUM(total_sales) AS total_sales
-FROM sales_data
-GROUP BY outlet_location;
-
--- Query to analyze sales by outlet size
-SELECT outlet_size, SUM(total_sales) AS total_sales
-FROM sales_data
-GROUP BY outlet_size;
-
+All SQL queries used in this project are available in the `sql_codes.docx` document or the `queries/` folder. Refer to this file for detailed query implementations.
