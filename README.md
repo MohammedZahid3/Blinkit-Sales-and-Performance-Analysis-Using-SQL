@@ -79,26 +79,3 @@ SELECT outlet_size, SUM(total_sales) AS total_sales
 FROM sales_data
 GROUP BY outlet_size;
 
-## Insights
-- **Fat Content Impact**: Products with lower fat content tend to have higher sales and better ratings.
-- **Outlet Type Performance**: Supermarkets outperform grocery stores in terms of total sales and average ratings.
-- **Geographic Trends**: Urban locations contribute significantly more to total sales compared to rural areas.
-- **Outlet Size Correlation**: Larger outlets generally have higher sales, but smaller outlets show better customer satisfaction.
-
-## How to Run the Project
-1. **Clone the repository**.
-2. **Import the dataset** into your SQL database.
-3. **Run the SQL queries** provided in the `queries/` folder to replicate the analysis.
-
-Blinkit-Sales-Analysis-SQL/
-│
-├── README.md                  # Project overview and instructions
-├── data/                      # Folder containing datasets
-│   └── blinkit_data.sql       # SQL data dump or scripts
-├── queries/                   # Folder containing SQL queries
-│   ├── sales_by_outlet_type.sql
-│   ├── fat_content_analysis.sql
-│   ├── geographic_sales_distribution.sql
-│   └── outlet_size_analysis.sql
-└── insights/                  # Folder containing key insights (optional)
-    └── insights_summary.txt
